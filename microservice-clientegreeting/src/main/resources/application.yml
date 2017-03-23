@@ -8,10 +8,7 @@ spring:
     cache: false       # Allow Thymeleaf templates to be reloaded at runtime
     prefix: classpath:/templates/    # Trailing / mandatory
                        # Template location for this application only
-
-# Map the error path to error template (for Thymeleaf)
-error:
-  path=/error
+  
 
 # Discovery Server Access
 #  1. Define URL of registration server (defaultZone)
@@ -26,3 +23,5 @@ eureka:
 # HTTP Server
 server:
   port: 3333   # HTTP (Tomcat) port
+  error:
+    path: /error
